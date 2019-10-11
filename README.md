@@ -1,7 +1,7 @@
 # Repository Automation
 
 Python program, that speeds up the process of setting up projects.
-
+In the future, this will be added to the command line.
 
 ## Tasks
 * Navigate to projects directory
