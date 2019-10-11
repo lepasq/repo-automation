@@ -6,6 +6,8 @@ path = "C:\\Users\\T440p\\Desktop\\Projects"
 newDir = "cmdline_will_be_added"
 newPath = path + "\\" + newDir
 
+
+# Navigating to directory
 os.chdir(path)
 os.mkdir(newDir)
 os.chdir(newDir)
