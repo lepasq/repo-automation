@@ -5,6 +5,8 @@ from github import Github
 path = "C:\\Users\\T440p\\Desktop\\Projects"
 newDir = "cmdline_will_be_added"
 newPath = path + "\\" + newDir
+repoName = "taskAutomation"
+userToken = "insert_your_token_here"
 
 
 # Navigating to directory
@@ -20,5 +22,7 @@ r.index.add("*")
 r.index.commit("initial commit")
 
 
-# Create repository on Github.com (not finished yet)
-g = Github("really cool token")
+# Create repository on Github.com
+g = Github(userToken)
+user = g.get_user()
+repo = user.create_repo(repoName)

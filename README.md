@@ -9,7 +9,7 @@ In the future, this will be added to the command line.
 - [x] Navigate into the project directory
 - [x] Create README.md file
 - [x] Initializing new git repository
-- [ ] Creating new repository on Github
+- [x] Creating new repository on Github
 - [ ] Adding remote to git repository
 - [x] Adding README.md to git repository
 - [x] Initial commit to master
