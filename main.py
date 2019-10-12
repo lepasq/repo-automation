@@ -30,5 +30,6 @@ user = g.get_user()
 repo = user.create_repo(repoName)
 
 
-# Adding remote to git repository
+# Adding remote to git repository & pushing to Github
 origin = r.create_remote('origin', remoteUrl)
+r.remotes.origin.push(refspec='master:master')

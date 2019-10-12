@@ -13,6 +13,6 @@ In the future, this will be added to the command line.
 - [x] Adding remote to git repository
 - [x] Adding README.md to git repository
 - [x] Initial commit to master
-- [ ] Push to Github
+- [x] Push to Github
 - [ ] Open VS Code
 - [ ] Command Line implementation
