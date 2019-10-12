@@ -10,7 +10,7 @@ In the future, this will be added to the command line.
 - [x] Create README.md file
 - [x] Initializing new git repository
 - [x] Creating new repository on Github
-- [ ] Adding remote to git repository
+- [x] Adding remote to git repository
 - [x] Adding README.md to git repository
 - [x] Initial commit to master
 - [ ] Push to Github

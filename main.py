@@ -7,6 +7,8 @@ newDir = "cmdline_will_be_added"
 newPath = path + "\\" + newDir
 repoName = "taskAutomation"
 userToken = "insert_your_token_here"
+userName = "insert_your_username_here"
+remoteUrl = "https://github.com/" + userName + "/" + repoName + ".git" 
 
 
 # Navigating to directory
@@ -26,3 +28,7 @@ r.index.commit("initial commit")
 g = Github(userToken)
 user = g.get_user()
 repo = user.create_repo(repoName)
+
+
+# Adding remote to git repository
+origin = r.create_remote('origin', remoteUrl)
