@@ -14,5 +14,5 @@ In the future, this will be added to the command line.
 - [x] Adding README.md to git repository
 - [x] Initial commit to master
 - [x] Push to Github
-- [ ] Open VS Code
+- [X] Open VS Code
 - [ ] Command Line implementation
