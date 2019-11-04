@@ -4,6 +4,7 @@ Python program, that speeds up the process of setting up projects.
 In the future, this will be added to the command line.
 
 ## Tasks
+
 - [x] Navigate to projects directory
 - [x] Create new directory
 - [x] Navigate into the project directory
@@ -15,4 +16,6 @@ In the future, this will be added to the command line.
 - [x] Initial commit to master
 - [x] Push to Github
 - [X] Open VS Code
-- [ ] Command Line implementation
+- [X] Add to path
+- [ ] Add a proper documentation
+- [ ] Clean up code
