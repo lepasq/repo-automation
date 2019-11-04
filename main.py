@@ -4,13 +4,12 @@ import sys
 from github import Github
 
 def main():
-    path = "C:\\Users\\T440p\\Desktop\\Projects"
-    # Line was replaced by argument from the commandline
-    #repoName = "repoName"
+    # Insert your path, userToken and username below
+    path = "path"
     repoName = str(sys.argv[1])
     newPath = path + "\\" + repoName
     userToken = "token"
-    userName = "lepasq"
+    userName = "username"
     remoteUrl = "https://github.com/" + userName + "/" + repoName + ".git"
 
     # Navigating to directory
@@ -35,5 +34,7 @@ def main():
 
     # Open VSCode and open workspace
     os.system("code .")
+    os.system("@echo on")
+    os.system("ECHO Successful build!")
 
 main()
