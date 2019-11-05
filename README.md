@@ -20,8 +20,9 @@ Correct formatting for Windows:
 
 ![alt Screenshot](https://github.com/lepasq/repo-automation/blob/master/screenshots/batch.png "Path to be changed inside create.bat")
 
-Inside create.bat, the **directory**, in which the automation repository is located has to be changed
-Correct formatting for Windows: ``C:\Users\T440p\Desktop\Projects\Repository-Automation``
+Inside create.bat, the **directory**, in which the automation repository is located has to be changed.  
+Correct formatting for Windows:  
+``C:\Users\T440p\Desktop\Projects\Repository-Automation``
 
 ## Add to Windows Command Prompt
 
