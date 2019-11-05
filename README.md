@@ -2,6 +2,12 @@
 
 Python program, that speeds up the process of setting up projects.
 
+## Install
+
+```git
+git clone https://github.com/lepasq/repo-automation.git
+```
+
 ## Setup
 
 In order to get the program running, a few variables need to be changed.
