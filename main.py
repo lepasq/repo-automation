@@ -4,12 +4,12 @@ import sys
 from github import Github
 
 def main():
-    # Insert your path, userToken and username below
+    # Insert your project folder path, github token and github username below
     path = "path"
-    repoName = str(sys.argv[1])
-    newPath = path + "\\" + repoName
     userToken = "token"
     userName = "username"
+    repoName = str(sys.argv[1])
+    newPath = path + "\\" + repoName
     remoteUrl = "https://github.com/" + userName + "/" + repoName + ".git"
 
     # Navigating to directory
