@@ -1,40 +1,34 @@
+#!/usr/bin/env python3
+
 import os
 import git
 import sys
 from github import Github
 
-def main():
-    # Insert your project folder path, github token and github username below
-    path = "path"
-    userToken = "token"
-    userName = "username"
-    repoName = str(sys.argv[1])
-    newPath = path + "\\" + repoName
-    remoteUrl = "https://github.com/" + userName + "/" + repoName + ".git"
+user_token = "token"
+user_name = "username"
+repo_name = str(sys.argv[1])
+remote_url = "https://github.com/" + user_name + "/" + repo_name + ".git"
 
-    # Navigating to directory
-    os.chdir(path)
-    os.mkdir(repoName)
-    os.chdir(repoName)
-    os.system("touch README.md")
+# Navigating to directory
+os.mkdir(repo_name)
+os.chdir(repo_name)
+os.system("touch README.md")
 
-    # git init && git commit
-    r = git.Repo.init(newPath)
-    r.index.add("*")
-    r.index.commit("initial commit")
+# git init && git commit
+r = git.Repo.init(".")
+r.index.add("*")
+r.index.commit("Initial commit")
 
-    # Create repository on Github.com
-    g = Github(userToken)
-    user = g.get_user()
-    repo = user.create_repo(repoName)
+# Create repository on Github.com
+g = Github(user_token)
+user = g.get_user()
+repo = user.create_repo(repo_name)
 
-    # Adding remote to git repository & pushing to Github
-    origin = r.create_remote('origin', remoteUrl)
-    r.remotes.origin.push(refspec='master:master')
+# Adding remote to git repository & pushing to Github
+origin = r.create_remote('origin', remote_url)
+r.remotes.origin.push(refspec='master:master')
 
-    # Open VSCode and open workspace
-    os.system("code .")
-    os.system("@echo on")
-    os.system("ECHO Successful build!")
-
-main()
+# Open directory code editor
+os.system("vim .")
+os.system("ECHO Successful build!")
