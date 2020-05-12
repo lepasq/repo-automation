@@ -31,4 +31,4 @@ r.remotes.origin.push(refspec='master:master')
 
 # Open directory code editor
 os.system("vim .")
-os.system("ECHO Successful build!")
+os.system("echo Successful build!")
