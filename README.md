@@ -1,6 +1,8 @@
 # Repository Automation
 
-Python program, that speeds up the process of setting up projects.
+This repository contains a python script, that speeds up the process of setting up projects.
+
+Running the script will initialize a local repository, add an empty README.md and push it to Github.
 
 ## Install
 
@@ -12,9 +14,9 @@ git clone https://github.com/lepasq/repo-automation.git
 
 In order to get the program running, a few variables need to be changed.
 
-![alt Screenshot](https://github.com/lepasq/repo-automation/blob/master/screenshots/python.png "Variables to be changed inside main.py")
+![alt Screenshot](https://github.com/lepasq/repo-automation/blob/master/screenshots/python.png "Variables to be changed inside create.py")
 
-Inside ``main.py``, **user_token** and **user_name** have to be changed.
+Inside ``main.py``, **user_token**,  **user_name**  and **code_editor** have to be adjusted.
 
 ![alt Screenshot](https://github.com/lepasq/repo-automation/blob/master/screenshots/batch.png "Path to be changed inside create.bat")
 
@@ -35,9 +37,10 @@ and replace the first line of `create.py` with
 #!/usr/bin/env python
 ```
 
-If you are running windows, you need to replace `echo` inside `create.py` (l. 34) with `ECHO`
+If you are running windows, you need to replace `echo` inside `create.py` (l. 34) with `ECHO`.
 
-## Add to Windows Command Prompt
+
+## Add Command to Windows 
 
 In order to use the program inside your command prompt, the folder containing the repository has to be added to the **environment variables.**
 
@@ -58,3 +61,16 @@ create name
 ```
 
  where _name_ is the desired name of the repository that shall be created.
+
+ If you want the command to be called differently, you should change the name of `create.bat`.
+
+
+## Add Command to Linux 
+
+You should keep the python file `create` in your scripts folder (`~/.local/bin/`) and rename the file to whatever the command should be called.
+
+Finally, you need to add Execution Permissions to your file:
+
+```sh
+chmod +x create
+```

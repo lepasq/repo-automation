@@ -8,6 +8,7 @@ from github import Github
 user_token = "token"
 user_name = "username"
 repo_name = str(sys.argv[1])
+code_editor = "vim"
 remote_url = "https://github.com/" + user_name + "/" + repo_name + ".git"
 
 # Navigating to directory
@@ -30,5 +31,5 @@ origin = r.create_remote('origin', remote_url)
 r.remotes.origin.push(refspec='master:master')
 
 # Open directory code editor
-os.system("vim .")
+os.system(code_editor + " .")
 os.system("echo Successful build!")
